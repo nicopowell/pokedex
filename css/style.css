@@ -9,9 +9,10 @@ main {
 }
 
 .trainerCard {
-  background: #707070;
+  background: #666;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 20px #111;
 }
 
 .trainerHeader {
@@ -41,7 +42,7 @@ main {
 }
 
 .trainerInfo div {
-  background-color: #0003;
+  background-color: #0002;
   display: flex;
   justify-content: space-between;
 }
@@ -59,10 +60,6 @@ main {
   background: #cfcfcf;
 }
 
-.trainerFooter p {
-  background-color: #0002;
-}
-
 .trainerPokemons div img {
-  background-color: #0005;
+  background-color: #0003;
 }
