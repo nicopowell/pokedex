@@ -1,0 +1,64 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .OrdenMain {
+    margin: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+  }
+  
+  .ordenCards {
+    margin-top: 35px;
+  }
+  
+  .azul {
+    border-radius: 1em;
+    background-color: rgb(7, 193, 255);
+    color: white;
+    width: 70px;
+  }
+  
+  .naranja {
+    border-radius: 1em;
+    background-color: rgb(255, 171, 16);
+    color: white;
+    width: 70px;
+  }
+  
+  .verde {
+    border-radius: 1em;
+    background-color: rgb(120, 206, 124);
+    color: white;
+    width: 70px;
+  }
+  
+  .morado {
+    border-radius: 1em;
+    background-color: rgb(232, 137, 232);
+    color: white;
+    width: 70px;
+  }
+  
+  .gris {
+      border-radius: 1em;
+      background-color: rgb(159, 159, 159);
+      color: white;
+      width: 70px;
+  }
+
+  /* dispositivos small */
+
+@media all and (max-width: 767px) {
+
+}
+
+/* dispositivos medium */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+   
+  }
