@@ -23,11 +23,17 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+
+
     <link rel="stylesheet" href="./css/style.css" />
     <title>Pokedex</title>
   </head>
   <body>
-    <nav style="background-color: crimson;" class="navbar fixed-top navbar-expand-lg navbar-dark shadow-lg">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-lg">
       <div class="container-fluid navbar-expand">
         <a class="navbar-brand fw-bold" href="index.html">Pokedex</a>
         <button
@@ -49,6 +55,10 @@
             
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/acercaDeNosotros.html">Acerca de nosotros</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -89,7 +99,7 @@
                   autocomplete="off"
                    required
                    />
-                   <button class="submit btn btn-outline-secondary" style="background-color: aliceblue;">
+                   <button class="submit btn botonLupa btn-outline-secondary">
                     <i class="bi bi-search"></i>
                   </button>
               </div>
@@ -102,8 +112,8 @@
       </div>
     </nav>
 
-    <main class="text-light container" >
-      <section id="carouselBanner" style="height: 20%; width: 100%" ; class="carousel slide mb-5">
+    <main class="text-light container-fluid" >
+      <section id="carouselBanner" class="carousel slide mb-5">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -135,7 +145,7 @@
                 alt="Pokebola Banner"
               />
             </article>
-          />
+          </a>/>
 
           <a href="./pages/error404.html">
             <article class="carousel-item">
@@ -187,15 +197,10 @@
       <section class="container">
         <div class="row">
           
-          </aside>
-          <aside class="file-md-6 text-center d-flex flex-column mt-2">
-            <a href="./pages/acercaDeNosotros.html" style="color: white;">Acerca de nosotros</a>
-      
-          </aside>
-
+        
           <aside class="file-md-6 text-center mt-2">
 
-<h5 class="text-light mb-3">&copy Todos los derechos reservados</h5>
+          <h5 class="text-light mb-3">&copy Todos los derechos reservados</h5>
             
           </aside>
         </div>

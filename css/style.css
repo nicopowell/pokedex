@@ -1,5 +1,18 @@
 html,
 
+nav {
+  background-color: crimson;
+  height: 45px; ;
+}
+
+.botonLupa {
+  background-color: white;
+  height: 45px;
+}
+
+#carouselBanner {margin-top: 30px !Important;}
+
+
 footer {
   background: #1b252f;
   margin-top: auto;
