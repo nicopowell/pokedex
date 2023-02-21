@@ -32,9 +32,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Pokedex</title>
   </head>
+  
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-lg">
-      <div class="container-fluid navbar-expand">
+      <div class="container-fluid">
         <a class="navbar-brand fw-bold" href="index.html">Pokedex</a>
         <button
           class="navbar-toggler"
@@ -87,7 +88,7 @@
               role="search"
               action="./pages/error404.html"
             >
-              <div class="input-group border-bottom m-3">
+              <div class="input-group m-3">
                 <input
                   type="text"
                   class="form-control"
@@ -113,105 +114,52 @@
     </nav>
 
     <main class="text-light container-fluid" >
-      <section id="carouselBanner" class="carousel slide mb-5">
+     
+      <div id="carouselExampleIndicators" class="carousel slide mt-4">
         <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselBanner"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselBanner"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselBanner"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
-          <a href="./pages/error404.html">
-            <article class="carousel-item active">
-              <img
-                src="./img/pokebola.jpg"
-                class="d-block w-100 banner-responsive"
-                alt="Pokebola Banner"
-              />
-            </article>
-          </a>/>
-
-          <a href="./pages/error404.html">
-            <article class="carousel-item">
-              <img
-                src="./img/pikachu.jpg"
-                class="d-block w-100 banner-responsive"
-                alt="Pikachu Banner"
-              />
-            </article>
-
-          </a>
-          <a href="./pages/error404.html">
-            <article class="carousel-item">
-              <img
-                src="./img/abhishek-rana.jpg"
-                class="d-block w-100 banner-responsive"
-                alt="abhishek-rana Banner"
-                id="abhishek-ranaBadBanner"
-              />
-            </article>
-          </a>
-
+        <div class="carousel-inner" style="height: 600px !important;">
+          <div class="carousel-item active">
+            <img src="./img/pokebola.jpg" class="d-block w-100" alt="pokebola" style="height: 600px !important;">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/pikachu.jpg" class="d-block w-100" alt="pikachu" style="height: 600px !important;">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/abhishek-rana.jpg" class="d-block w-100" alt="abhishek-rana" style="height: 600px !important;">
+          </div>
         </div>
-        <button
-          class="carousel-control-prev "
-          type="button"
-          data-bs-target="#carouselBanner"
-          data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselBanner"
-          data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </section>
+      </div>
+
     </main>
+
+    
+<footer class="text-center text-lg-start bg-dark text-muted fixed-bottom">
+  <div class="text-center p-4" style= "color: rgb(255, 255, 255);">
+    <h5>&copy Todos los derechos reservados</h5>
+  </div>
+</footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
 
   </body>
 
-  <footer class="py-4">
-    <div>
-      <section class="container">
-        <div class="row">
-          
-        
-          <aside class="file-md-6 text-center mt-2">
-
-          <h5 class="text-light mb-3">&copy Todos los derechos reservados</h5>
-            
-          </aside>
-        </div>
-      </section>
-    </div>
-  </footer>
-
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-  crossorigin="anonymous"
-></script>
   
+ 
+ 
 </html>
