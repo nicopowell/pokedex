@@ -1,11 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
+nav {
+  background-color: #dc3545;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.input-group button:hover {
+  background-color: #00000030;
+}
+
 main {
+  margin-top: 56px;
   flex-grow: 1;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.centrarImgBanner {
+  object-position: 15%;
+}
+
+.tipo {
+  border-radius: 1em;
+  color: #ffffff;
+  width: 70px;
+  font-weight: bold;
+}
+
+.azul {
+  background-color: #0d6efd;
+}
+
+.naranja {
+  background-color: #fd7d24;
+}
+
+.verde {
+  background-color: #9bcc50;
+}
+
+.morado {
+  background-color: #b97fc9;
+}
+
+.gris {
+  background-color: #bdb9b8;
 }
 
 .trainerCard {
@@ -71,8 +125,9 @@ main {
   background-color: #0003;
 }
 
-@media screen and (max-width: 768px) {
-  .medallas {
+/* dispositivos small */
+@media all and (max-width: 767px) {
+.medallas {
     width: 100%;
   }
 }
