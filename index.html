@@ -33,75 +33,77 @@
     <title>Pokedex</title>
   </head>
   <body>
-    <header><nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light fw-bold" href="./index.html"
-          >Pokedex</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link text-light active"
-                aria-current="page"
-                href="./index.html"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-light"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu bg-secondary">
-                <li>
-                  <a
-                    class="dropdown-item text-light"
-                    href="./pages/acercaDeNosotros.html"
-                    >Acerca de nosotros</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control border-light"
-                id="buscador"
-                placeholder="Buscar"
-                aria-label="Buscar"
-                aria-describedby="button-addon2"
-                maxlength="50"
-                required
-              />
-              <button class="submit btn btn-outline-light">
-                <i class="bi bi-search text-light"></i>
-              </button>
-            </div>
-          </form>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fw-bold" href="./index.html"
+            >Pokedex</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="./pages/acercaDeNosotros.html"
+                      >Acerca de nosotros</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  id="buscador"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                  aria-describedby="button-addon2"
+                  maxlength="50"
+                  required
+                />
+                <button class="submit btn btn-outline-light">
+                  <i class="bi bi-search text-light"></i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav></header>
+      </nav>
+    </header>
     <main>
-    <section id="carouselBanner" class="carousel slide">
+      <section id="carouselBanner" class="carousel slide">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -166,7 +168,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </section>
-      <section class="container d-flex justify-content-between">
+      <section class="container d-flex justify-content-between py-5">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 my-2">
             <div class="card">
@@ -324,12 +326,12 @@
         </div>
       </section>
       <footer class="py-4 bg-dark">
-      <div>
-        <section class="container text-center pt-2">
-          <p class="text-light">&copy Todos los derechos reservados</p>
-        </section>
-      </div>
-    </footer>
+        <div>
+          <section class="container text-center pt-2">
+            <p class="text-light">&copy Todos los derechos reservados</p>
+          </section>
+        </div>
+      </footer>
     </main>
   </body>
   <script
