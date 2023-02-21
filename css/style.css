@@ -1,74 +1,44 @@
 * {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  .OrdenMain {
-    margin: 140px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  
-  }
-  
-  main {
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .ordenCards {
-    margin-top: 35px;
-  }
-  
-  .azul {
-    border-radius: 1em;
-    background-color: rgb(7, 193, 255);
-    color: white;
-    width: 70px;
-  }
-  
-  .naranja {
-    border-radius: 1em;
-    background-color: rgb(255, 171, 16);
-    color: white;
-    width: 70px;
-  }
-  
-  .verde {
-    border-radius: 1em;
-    background-color: rgb(120, 206, 124);
-    color: white;
-    width: 70px;
-  }
-  
-  .morado {
-    border-radius: 1em;
-    background-color: rgb(232, 137, 232);
-    color: white;
-    width: 70px;
-  }
-  
-  .gris {
-      border-radius: 1em;
-      background-color: rgb(159, 159, 159);
-      color: white;
-      width: 70px;
-  }
-
-  /* dispositivos small */
-
-@media all and (max-width: 767px) {
-
-.card {
-  
+  margin: 0px;
+  padding: 0px;
 }
 
+main {
+  padding: 0px;
+  margin: 0px;
+}
+
+.tipo {
+  border-radius: 1em;
+  color: #ffffff;
+  width: 70px;
+  font-weight: bold;
+}
+
+.azul {
+  background-color: #07c1ff;
+}
+
+.naranja {
+  background-color: #ffab10;
+}
+
+.verde {
+  background-color: #78ce7c;
+}
+
+.morado {
+  background-color: #e889e8;
+}
+
+.gris {
+  background-color: #9f9f9f;
+}
+
+/* dispositivos small */
+@media all and (max-width: 767px) {
 }
 
 /* dispositivos medium */
-
 @media all and (min-width: 768px) and (max-width: 991px) {
-
-
-  }
+}
