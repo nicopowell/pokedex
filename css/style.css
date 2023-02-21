@@ -1,22 +1,23 @@
 
-
 nav {
-  background-color: crimson;
-  height: 45px; ;
+  background-color: #dc3545;
 }
 
-.botonLupa {
-  background-color: white;
-  height: 45px;
+.nav-link:hover {
+  font-weight: 500;
 }
 
-#carouselBanner {margin-top: 30px !Important;}
+.input-group button:hover {
+  background-color: #00000030;
+}
 
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
 
-footer {
-  background: #1b252f;
-  margin-top: auto;
-  text-align: center;
+.centrarImgBanner {
+  object-position: 15%;
 }
 ul>li>a{
   color: white !important;
