@@ -1,18 +1,46 @@
-.card-pokemon {
-  background: url(../img/1149487.png);
-  background-size: cover;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-.evoluciones {
-  background: #0003;
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+nav {
+  background-color: #dc3545;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.input-group button:hover {
+  background-color: #00000030;
+}
+
+main {
+  margin-top: 56px;
+  flex-grow: 1;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.centrarImgBanner {
+  object-position: 15%;
 }
 
 .tipo {
-  border-radius: 0.8em;
+  border-radius: 1em;
   color: #ffffff;
-  width: 100px;
+  width: 90px;
   font-weight: bold;
-  text-align: center;
+  text-shadow: 0 0 4px #000;
 }
 
 .azul {
@@ -48,14 +76,97 @@
 }
 
 .marron {
-  background-color: #573721;
+  background-color: #9b592d;
 }
 
 .roca {
-  background-color: #25170e;
+  background-color: #63391f;
 }
 
 .amarillo {
   background-color: #ffff00;
-  color: #000000;
+}
+
+.trainerCard {
+  background: #666;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 20px #111;
+}
+
+.trainerHeader {
+  background-color: #ef3e33;
+}
+
+.trainerHeader img {
+  align-self: center;
+  height: 100%;
+  object-fit: contain;
+}
+
+.trainerBody {
+  flex-grow: 1;
+}
+
+.trainerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.trainerInfo p {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.trainerInfo > div {
+  background-color: #0002;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trainerImg {
+  padding: 1rem;
+}
+
+.trainerImg img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.medallas {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  flex-wrap: nowrap;
+}
+
+.trainerFooter {
+  background: #cfcfcf;
+}
+
+.trainerPokemons div img {
+  background-color: #0003;
+}
+
+.card-pokemon {
+  background: url(../img/1149487.png);
+  background-size: cover;
+}
+
+.evoluciones {
+  background: #0003;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* dispositivos small */
+@media all and (max-width: 767px) {
+  .medallas {
+    width: 100%;
+  }
 }

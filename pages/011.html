@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/pokeball-icon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pokedex - 011</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fw-bold" href="../index.html"
+            >Pokedex</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="../pages/acercaDeNosotros.html"
+                      >Acerca de nosotros</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  id="buscador"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                  aria-describedby="button-addon2"
+                  maxlength="50"
+                  required
+                />
+                <button class="submit btn btn-outline-light">
+                  <i class="bi bi-search text-light"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="card-pokemon text-light my-5 p-4 p-lg-5 rounded-4">
+        <article class="row">
+          <h1 class="text-center pb-4 col-12">Metapod N°011</h1>
+          <div class="col-12 col-lg-5 text-center">
+            <img src="../img/011.png" alt="Metapod imagen" class="w-100" />
+          </div>
+          <div class="col-12 col-lg-7">
+            <p>
+              Como en este estado solo puede endurecer su coraza, permanece
+              inmóvil a la espera de evolucionar.
+            </p>
+            <div class="card text-bg-secondary mb-3">
+              <div class="card-header fs-4">Datos</div>
+              <div class="card-body row">
+                <div class="col-6">
+                  <h5>Altura</h5>
+                  <p>0,7 m</p>
+                </div>
+                <div class="col-6">
+                  <h5>Categoria</h5>
+                  <p>Capullo</p>
+                </div>
+                <div class="col-6">
+                  <h5>Peso</h5>
+                  <p>9,9 kg</p>
+                </div>
+                <div class="col-6">
+                  <h5>Habilidad</h5>
+                  <p>Mudar</p>
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-gender-male fs-3"></i
+                  ><i class="bi bi-gender-female fs-3"></i>
+                </div>
+              </div>
+            </div>
+            <h4>Tipo</h4>
+            <div class="d-flex flex-wrap gap-2 text-center">
+              <p class="tipo verde">Bicho</p>
+            </div>
+            <h4>Debilidad</h4>
+            <div class="d-flex flex-wrap gap-2 text-center">
+              <p class="tipo naranja">Fuego</p>
+              <p class="tipo gris">Volador</p>
+              <p class="tipo roca">Roca</p>
+            </div>
+          </div>
+        </article>
+        <hr class="my-4" />
+        <article class="row">
+          <h3>Evoluciones</h3>
+          <div class="col-12 col-lg-4 my-2">
+            <a href="./010.html"
+              ><div class="card evoluciones">
+                <img
+                  src="../img/010.png"
+                  class="card-img-top"
+                  alt="Caterpie imagen"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">N.°010</h5>
+                  <h4 class="card-text">Caterpie</h4>
+                  <div class="d-flex flex-row gap-2">
+                    <p class="tipo verde text-center">Bicho</p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-12 col-lg-4 my-2">
+            <a href="./011.html"
+              ><div class="card evoluciones">
+                <img
+                  src="../img/011.png"
+                  class="card-img-top"
+                  alt="Metapod imagen"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">N.°011</h5>
+                  <h4 class="card-text">Metapod</h4>
+                  <div class="d-flex flex-row gap-2">
+                    <p class="tipo verde text-center">Bicho</p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-12 col-lg-4 my-2">
+            <a href="./012.html"
+              ><div class="card evoluciones">
+                <img
+                  src="../img/012.png"
+                  class="card-img-top"
+                  alt="Butterfree imagen"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">N.°012</h5>
+                  <h4 class="card-text">Butterfree</h4>
+                  <div class="d-flex flex-row gap-2">
+                    <p class="tipo verde text-center">Bicho</p>
+                    <p class="tipo gris text-center">Volador</p>
+                  </div>
+                </div>
+              </div></a
+            >
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="py-4 bg-dark">
+      <div>
+        <section class="container text-center pt-2">
+          <p class="text-light">&copy Todos los derechos reservados</p>
+        </section>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
