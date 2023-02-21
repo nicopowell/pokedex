@@ -1,247 +1,144 @@
-.ficha-poke{
-    border-radius: 10px;
-    border: 0.3em solid rgb(196, 196, 196);
-    width: 80%;
-    margin: auto;
-    background: url(../img/1149487.png);
-    background-size: cover;
-    
-}
-.volver{
-    width: 5%;
+.card-pokemon {
+  background: url(../img/1149487.png);
+  background-size: cover;
 }
 
-.pokepasador{
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.titulo-prin{
-    text-align: center;
-    font-size: xx-large;
-
+.evoluciones {
+  background: #0003;
 }
 
-.stats-pok{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    margin: 1em;  
+.img-pok {
+  margin-right: 0.5em;
+  width: 98%;
+  height: 60%;
+  border-radius: 30px;
+  background: url(/pokedex/img/hqdefault.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7em;
 }
 
-.colum-.der{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+.default {
+  background-color: rgb(108, 99, 240);
+  width: 80%;
+  border: 0.1em rgb(88, 88, 88);
+  border-collapse: collapse;
+  color: white;
+  border-radius: 10px;
 }
-
-.otro{
-    display: flex;
-    justify-content: center;
-    height: 35%;
-    width: 98%;
-}
-
-.otro img{
-    width: 100%;
-    height: 100%;
-}
-
-.colum-iz{
-    margin-bottom: 80px;
-}
-
-.img-pok{
-    margin-right: 0.5em;
-    width: 98%;
-    height: 60%;
-    border-radius: 30px;
-    background: url(/pokedex/img/hqdefault.jpg );  
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    margin-top: 0.7em;
-
-}
-
-img{
-    
-    width: 68%;
-    margin-top: 20px;
-}
-
-.default{
-    background-color: rgb(108, 99, 240);
-     width: 80%;
-    border: 0.1em  rgb(88, 88, 88);
-    border-collapse:collapse;
-    color: white;
-    border-radius: 10px;
-}
-
-th {
-    padding: 0.5em;
-    text-align: start;
-    font-size: large;
-}
-
-th{
-    width: 20vw;
-}
-.title{
-    color: rgb(227, 248, 150);
-}
-tbody tr td{
-    font-size: 21px;
-}
-thead tr{
-    font-size: 26px;
-}
-
-
-
-
-.titulo-3{
-    margin-top: 1em;
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    
-}
-
 
 .tipo {
-    border-radius: 0.8em;
-    color: #ffffff;
-    width: 100px;
-    font-weight: bold;
-    text-align: center;
-    
-  }
-  
-  .azul {
-    background-color: #0d6efd;
-  }
-  
-  .naranja {
-    background-color: #ff5100;
-  }
-  
-  .verde {
-    background-color: #9bcc50;
-  }
-  
-  .morado {
-    background-color: #b97fc9;
-  }
-  
-  .gris {
-    background-color: #bdb9b8;
-  }
-  
-  .rosa{
-    background-color: #d960fa;
-  }
-
-  .celeste{
-    background-color: rgb(84, 215, 255);
-  }
-
-  .azul-marino{
-    background-color: #488ef7;
-  }
-
-  .marron{
-    background-color: #573721;
-  }
-
-  .roca{
-    background-color: #25170e;
-  }
-
-  .amarillo{
-    background-color: yellow;
-    color: #000000;
-  }
-
-
-
-.tipos{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-   
-    
+  border-radius: 0.8em;
+  color: #ffffff;
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.debilidades{
-    display: flex;
-    flex-direction: row;
+.azul {
+  background-color: #0d6efd;
 }
 
-
-
-.pokevoluciones{
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 3em;
-    width: 80%;
-    background:url(/pokedex/img/fondo\ flashero.jpg);
-    background-size: cover;
-    border-radius: 10px;
-    border: #646464;
-    filter: drop-shadow(0 0 30px #000000);
-
-    
+.naranja {
+  background-color: #ff5100;
 }
 
-.pokecirculo{
-    width: 60%;
-    border: 0.3em solid rgb(255, 255, 255);
-    border-radius: 150px;
-    background-color: #646464;
+.verde {
+  background-color: #9bcc50;
 }
 
-.flecha{
-    width: 30%;
-    margin-bottom: 60px;
+.morado {
+  background-color: #b97fc9;
 }
 
-.evoluciones{
-   color: rgb(250, 250, 250);
-   
-   font-family: 'Press Start 2P', cursive;
-   font-size: small;
-
+.gris {
+  background-color: #bdb9b8;
 }
 
-.poketodo{
-    margin-bottom:1em;
+.rosa {
+  background-color: #d960fa;
+}
+
+.celeste {
+  background-color: rgb(84, 215, 255);
+}
+
+.azul-marino {
+  background-color: #488ef7;
+}
+
+.marron {
+  background-color: #573721;
+}
+
+.roca {
+  background-color: #25170e;
+}
+
+.amarillo {
+  background-color: yellow;
+  color: #000000;
+}
+
+.tipos {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.debilidades {
+  display: flex;
+  flex-direction: row;
+}
+
+.pokevoluciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 3em;
+  width: 80%;
+  background: url(/pokedex/img/fondo\ flashero.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  border: #646464;
+  filter: drop-shadow(0 0 30px #000000);
+}
+
+.pokecirculo {
+  width: 60%;
+  border: 0.3em solid rgb(255, 255, 255);
+  border-radius: 150px;
+  background-color: #646464;
+}
+
+.flecha {
+  width: 30%;
+  margin-bottom: 60px;
+}
+
+.evoluciones {
+  color: rgb(250, 250, 250);
+
+  font-family: "Press Start 2P", cursive;
+  font-size: small;
+}
+
+.poketodo {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media all and (max-width: 767px) {
+  .stats-pok {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-}
-
-
-@media all and (max-width:767px){
-
-    .stats-pok{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        margin: 1em;  
-    }
-
-
-
+    justify-content: space-between;
+    margin: 1em;
+  }
 }
