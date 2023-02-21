@@ -3,6 +3,31 @@
   padding: 0px;
 }
 
+nav {
+  background-color: #dc3545;
+}
+
+.nav-link:hover {
+  font-weight: 500;
+}
+
+.input-group button:hover {
+  background-color: #00000030;
+}
+
+main {
+  margin-top: 56px;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.centrarImgBanner {
+  object-position: 15%;
+}
+
 .tipo {
   border-radius: 1em;
   color: #ffffff;
@@ -36,4 +61,5 @@
 
 /* dispositivos medium */
 @media all and (min-width: 768px) and (max-width: 991px) {
-}
+
+
