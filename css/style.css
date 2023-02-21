@@ -1,17 +1,17 @@
+main {
+  margin-top: 56px;
+}
+
 nav {
   background-color: #dc3545;
 }
 
+.nav-link:hover {
+  font-weight: 500;
+}
+
 .input-group button:hover {
-  background-color: rgba(0, 0, 0, 0.205);
-}
-
-.botonLupa {
-  background-color: white;
-}
-
-main {
-  margin-top: 56px;
+  background-color: #00000030;
 }
 
 .carousel-item img {
@@ -21,10 +21,4 @@ main {
 
 .centrarImgBanner {
   object-position: 15%;
-}
-
-footer {
-  background: #1b252f;
-  margin-top: auto;
-  text-align: center;
 }
