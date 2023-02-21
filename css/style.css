@@ -12,6 +12,11 @@
   
   }
   
+  main {
+    padding: 0px;
+    margin: 0px;
+  }
+
   .ordenCards {
     margin-top: 35px;
   }
@@ -55,10 +60,15 @@
 
 @media all and (max-width: 767px) {
 
+.card {
+  
+}
+
 }
 
 /* dispositivos medium */
 
 @media all and (min-width: 768px) and (max-width: 991px) {
-   
+
+
   }
