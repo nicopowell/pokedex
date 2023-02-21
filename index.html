@@ -26,16 +26,18 @@
 
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
-
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>Pokedex</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark shadow-lg">
-      <div class="container-fluid navbar-expand">
-        <a class="navbar-brand fw-bold" href="index.html">Pokedex</a>
+    <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fw-bold" href="./index.html"
+          >Pokedex</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -47,72 +49,58 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      
-        <div class="collapse navbar-collapse justify-content-between"
-          id="navbarSupportedContent">
-
-          <ul class="navbar-nav mb-lg-0">
-            
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html">Inicio</a>
+              <a
+                class="nav-link text-light active"
+                aria-current="page"
+                href="./index.html"
+                >Inicio</a
+              >
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/acercaDeNosotros.html">Acerca de nosotros</a>
-            </li>
-
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle"
+              <a
+                class="nav-link dropdown-toggle text-light"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Categorias
+                Dropdown
               </a>
-              <ul class="dropdown-menu dropdown-menu-dark">
+              <ul class="dropdown-menu bg-secondary">
                 <li>
-                  <a class="dropdown-item" href="./pages/detalleDePokemon.html"
-                    >Detalles de Pokemón</a
+                  <a
+                    class="dropdown-item text-light"
+                    href="./pages/acercaDeNosotros.html"
+                    >Acerca de nosotros</a
                   >
-                </li>  
+                </li>
               </ul>
-
             </li>
           </ul>
-
-          <div class="d-flex flex-column flex-lg-row-reverse">
-            <form
-              class="d-flex me-lg-3"
-              role="search"
-              action="./pages/error404.html"
-            >
-              <div class="input-group border-bottom m-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="buscador"
-                  placeholder="Buscar un Pokemón"
-                  aria-label="Buscar"
-                  aria-describedby="button-addon2"
-                  maxlength="15"
-                  autocomplete="off"
-                   required
-                   />
-                   <button class="submit btn botonLupa btn-outline-secondary">
-                    <i class="bi bi-search"></i>
-                  </button>
-              </div>
-            </form>
-
-            
-            
-          </div>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-light"
+                id="buscador"
+                placeholder="Buscar"
+                aria-label="Buscar"
+                aria-describedby="button-addon2"
+                maxlength="50"
+                required
+              />
+              <button class="submit btn btn-outline-light">
+                <i class="bi bi-search text-light"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </nav>
-
-    <main class="text-light container-fluid" >
+    <main class="text-light container-fluid">
       <section id="carouselBanner" class="carousel slide mb-5">
         <div class="carousel-indicators">
           <button
@@ -144,8 +132,8 @@
                 class="d-block w-100 banner-responsive"
                 alt="Pokebola Banner"
               />
-            </article>
-          </a>/>
+            </article> </a
+          >/>
 
           <a href="./pages/error404.html">
             <article class="carousel-item">
@@ -155,7 +143,6 @@
                 alt="Pikachu Banner"
               />
             </article>
-
           </a>
           <a href="./pages/error404.html">
             <article class="carousel-item">
@@ -167,10 +154,9 @@
               />
             </article>
           </a>
-
         </div>
         <button
-          class="carousel-control-prev "
+          class="carousel-control-prev"
           type="button"
           data-bs-target="#carouselBanner"
           data-bs-slide="prev"
@@ -189,19 +175,14 @@
         </button>
       </section>
     </main>
-
   </body>
 
   <footer class="py-4">
     <div>
       <section class="container">
         <div class="row">
-          
-        
           <aside class="file-md-6 text-center mt-2">
-
-          <h5 class="text-light mb-3">&copy Todos los derechos reservados</h5>
-            
+            <h5 class="text-light mb-3">&copy Todos los derechos reservados</h5>
           </aside>
         </div>
       </section>
@@ -209,9 +190,8 @@
   </footer>
 
   <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-  crossorigin="anonymous"
-></script>
-  
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
 </html>

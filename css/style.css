@@ -1,17 +1,18 @@
-html,
-
 nav {
-  background-color: crimson;
-  height: 45px; ;
+  background-color: #dc3545;
+}
+
+.input-group button:hover {
+  background-color: rgba(0, 0, 0, 0.205);
 }
 
 .botonLupa {
   background-color: white;
-  height: 45px;
 }
 
-#carouselBanner {margin-top: 30px !Important;}
-
+main {
+  margin-top: 56px;
+}
 
 footer {
   background: #1b252f;
