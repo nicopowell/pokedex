@@ -10,7 +10,7 @@ body {
 }
 
 nav {
-  background-color: #dc3545;
+  background-color: #ef3e33;
 }
 
 .nav-link:hover {
@@ -127,7 +127,7 @@ main {
 
 /* dispositivos small */
 @media all and (max-width: 767px) {
-.medallas {
+  .medallas {
     width: 100%;
   }
 }
