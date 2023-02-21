@@ -3,11 +3,6 @@
   padding: 0px;
 }
 
-main {
-  padding: 0px;
-  margin: 0px;
-}
-
 .tipo {
   border-radius: 1em;
   color: #ffffff;
@@ -16,23 +11,23 @@ main {
 }
 
 .azul {
-  background-color: #07c1ff;
+  background-color: #0d6efd;
 }
 
 .naranja {
-  background-color: #ffab10;
+  background-color: #fd7d24;
 }
 
 .verde {
-  background-color: #78ce7c;
+  background-color: #9bcc50;
 }
 
 .morado {
-  background-color: #e889e8;
+  background-color: #b97fc9;
 }
 
 .gris {
-  background-color: #9f9f9f;
+  background-color: #bdb9b8;
 }
 
 /* dispositivos small */
