@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,10 +23,619 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Pokedex - Nosotros</title>
   </head>
-  <body>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fw-bold" href="../index.html"
+            >Pokedex</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="../pages/acercaDeNosotros.html"
+                      >Acerca de nosotros</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  id="buscador"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                  aria-describedby="button-addon2"
+                  maxlength="50"
+                  required
+                />
+                <button class="submit btn btn-outline-light">
+                  <i class="bi bi-search text-light"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container d-flex flex-column py-5 nosotrosContainer">
+      <h1 class="text-center display-4">Acerca de nosotros</h1>
+      <section class="row text-light">
+        <div class="col-12 col-lg-6 p-4">
+          <article class="trainerCard rounded-4">
+            <div class="trainerHeader d-flex py-2 px-4 rounded-top-4">
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+              <h3 class="mb-0 mx-2">FICHA DE ENTRENADOR</h3>
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+            </div>
+            <div class="trainerBody container-fluid">
+              <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-8 p-3 trainerInfo">
+                  <div class="rounded">
+                    <p class="fw-bold">Nombre</p>
+                    <p>Agustín Baza</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Edad</p>
+                    <p>22</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Hobbie</p>
+                    <p></p>
+                  </div>
+                  <div
+                    class="rounded p-2 d-flex justify-content-around flex-wrap"
+                  >
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/roca.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/cascada.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/trueno.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/arcoiris.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/alma.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/pantano.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/volcan.png"
+                        alt=""
+                        width="32px"
+                      />
+
+                      <img
+                        src="../img/medallas/tierra.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 trainerImg ps-md-0">
+                  <img
+                    src="../img/nosotros/Agustin.jpg"
+                    alt="Agustín Baza"
+                    class="img-fluid rounded-4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="trainerFooter container-fluid py-2 rounded-bottom-4 text-dark-emphasis"
+            >
+              <div class="trainerPokemons row">
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/001.png"
+                    alt="Bulbasaur"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/005.png"
+                    alt="Charmeleon"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/009.png"
+                    alt="Blastoise"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/010.png"
+                    alt="Caterpie"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/004.png"
+                    alt="Charmander"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/012.png"
+                    alt="Butterfree"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-6 p-4">
+          <article class="trainerCard rounded-4">
+            <div class="trainerHeader d-flex py-2 px-4 rounded-top-4">
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+              <h3 class="mb-0 mx-2">FICHA DE ENTRENADOR</h3>
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+            </div>
+            <div class="trainerBody container-fluid">
+              <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-8 p-3 trainerInfo">
+                  <div class="rounded">
+                    <p class="fw-bold">Nombre</p>
+                    <p>Graciela Estrada</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Edad</p>
+                    <p>35</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Hobbie</p>
+                    <p></p>
+                  </div>
+                  <div
+                    class="rounded p-2 d-flex justify-content-around flex-wrap"
+                  >
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/roca.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/cascada.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/trueno.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/arcoiris.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/alma.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/pantano.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/volcan.png"
+                        alt=""
+                        width="32px"
+                      />
+
+                      <img
+                        src="../img/medallas/tierra.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 trainerImg ps-md-0">
+                  <img
+                    src="../img/nosotros/Graciela.jpg"
+                    alt="Graciela Estrada"
+                    class="img-fluid rounded-4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="trainerFooter container-fluid py-2 rounded-bottom-4 text-dark-emphasis"
+            >
+              <div class="trainerPokemons row">
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/004.png"
+                    alt="Charmander"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/008.png"
+                    alt="Wartortle"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/003.png"
+                    alt="Venusaur"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/011.png"
+                    alt="Metapod"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/012.png"
+                    alt="Butterfree"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/001.png"
+                    alt="Bulbasaur"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-6 p-4">
+          <article class="trainerCard rounded-4">
+            <div class="trainerHeader d-flex py-2 px-4 rounded-top-4">
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+              <h3 class="mb-0 mx-2">FICHA DE ENTRENADOR</h3>
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+            </div>
+            <div class="trainerBody container-fluid">
+              <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-8 p-3 trainerInfo">
+                  <div class="rounded">
+                    <p class="fw-bold">Nombre</p>
+                    <p>Emanuel Flores</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Edad</p>
+                    <p>19</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Hobbie</p>
+                    <p></p>
+                  </div>
+                  <div
+                    class="rounded p-2 d-flex justify-content-around flex-wrap"
+                  >
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/roca.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/cascada.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/trueno.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/arcoiris.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/alma.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/pantano.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/volcan.png"
+                        alt=""
+                        width="32px"
+                      />
+
+                      <img
+                        src="../img/medallas/tierra.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 trainerImg ps-md-0">
+                  <img
+                    src="../img/nosotros/Emanuel.jpg"
+                    alt="Emanuel Flores"
+                    class="img-fluid rounded-4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="trainerFooter container-fluid py-2 rounded-bottom-4 text-dark-emphasis"
+            >
+              <div class="trainerPokemons row">
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/007.png"
+                    alt="Squirtle"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/002.png"
+                    alt="Ivysaur"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/006.png"
+                    alt="Chaarizard"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/010.png"
+                    alt="Caterpie"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/001.png"
+                    alt="Bulbasaur"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/004.png"
+                    alt="Charmander"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-lg-6 p-4">
+          <article class="trainerCard rounded-4">
+            <div class="trainerHeader d-flex py-2 px-4 rounded-top-4">
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+              <h3 class="mb-0 mx-2">FICHA DE ENTRENADOR</h3>
+              <img
+                src="../img/pokeball-icon-2.png"
+                alt="Icono de una pokeball"
+                width="32px"
+              />
+            </div>
+            <div class="trainerBody container-fluid">
+              <div class="row flex-column-reverse flex-md-row">
+                <div class="col-12 col-md-8 p-3 trainerInfo">
+                  <div class="rounded">
+                    <p class="fw-bold">Nombre</p>
+                    <p>Nico Powell</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Edad</p>
+                    <p>20</p>
+                  </div>
+                  <div class="rounded">
+                    <p class="fw-bold">Hobbie</p>
+                    <p>Videojuegos, música</p>
+                  </div>
+                  <div
+                    class="rounded p-2 d-flex justify-content-around flex-wrap"
+                  >
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/roca.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/cascada.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/trueno.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/arcoiris.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                    <div class="medallas py-1 py-md-0">
+                      <img src="../img/medallas/alma.png" alt="" width="32px" />
+                      <img
+                        src="../img/medallas/pantano.png"
+                        alt=""
+                        width="32px"
+                      />
+                      <img
+                        src="../img/medallas/volcan.png"
+                        alt=""
+                        width="32px"
+                      />
+
+                      <img
+                        src="../img/medallas/tierra.png"
+                        alt=""
+                        width="32px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 trainerImg ps-md-0">
+                  <img
+                    src="../img/nosotros/Nico.jpg"
+                    alt="Nico Powell"
+                    class="img-fluid rounded-4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="trainerFooter container-fluid py-2 rounded-bottom-4 text-dark-emphasis"
+            >
+              <div class="trainerPokemons row">
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/002.png"
+                    alt="Ivysaur"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/006.png"
+                    alt="Chaarizard"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/007.png"
+                    alt="Squirtle"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/011.png"
+                    alt="Metapod"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/012.png"
+                    alt="Butterfree"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+                <div class="col-4 col-md-2">
+                  <img
+                    src="../img/004.png"
+                    alt="Charmander"
+                    class="img-fluid rounded-4 my-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="py-4 bg-dark">
+      <div>
+        <section class="container text-center pt-2">
+          <p class="text-light">&copy Todos los derechos reservados</p>
+        </section>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

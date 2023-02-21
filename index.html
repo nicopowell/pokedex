@@ -16,21 +16,403 @@
       name="keywords"
       content="pokemon, pokedex, pikachu, nintendo, gamefreak"
     />
-    <link rel="icon" href="./img/pokeball-icon.ico" />
+    <link rel="icon" href="/img/pokeball-icon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Pokedex</title>
   </head>
   <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light fw-bold" href="./index.html"
+            >Pokedex</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu bg-secondary">
+                  <li>
+                    <a
+                      class="dropdown-item text-light"
+                      href="./pages/acercaDeNosotros.html"
+                      >Acerca de nosotros</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  id="buscador"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
+                  aria-describedby="button-addon2"
+                  maxlength="50"
+                  required
+                />
+                <button class="submit btn btn-outline-light">
+                  <i class="bi bi-search text-light"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="carouselBanner" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselBanner"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselBanner"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselBanner"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <article class="carousel-item active">
+            <img
+              src="./img/pokeball_banner.jpg"
+              class="d-block w-100"
+              alt="Pokeball Banner"
+            />
+          </article>
+          <article class="carousel-item">
+            <img
+              src="./img/pikachu.jpg"
+              class="d-block w-100"
+              alt="Pikachu Banner"
+            />
+          </article>
+          <article class="carousel-item">
+            <img
+              src="./img/bulbasaur_banner.jpg"
+              class="d-block w-100 centrarImgBanner"
+              alt="Bulbasaur Banner"
+            />
+          </article>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselBanner"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselBanner"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <section class="container d-flex justify-content-between py-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/001.html"
+                ><img
+                  src="./img/001.png"
+                  class="card-img-top"
+                  alt="Bulbasaur imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°001</h5>
+                <h4 class="card-text">Bulbasaur</h4>
+                <div class="d-flex flex-row">
+                  <p class="tipo verde text-center">Planta</p>
+                  <p class="tipo morado text-center">Veneno</p>
+                </div>
+                <a href="./pages/001.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/002.html"
+                ><img
+                  src="./img/002.png"
+                  class="card-img-top"
+                  alt="Ivysaur imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°002</h5>
+                <h4 class="card-text">Ivysaur</h4>
+                <div class="d-flex flex-row">
+                  <p class="tipo verde text-center">Planta</p>
+                  <p class="tipo morado text-center">Veneno</p>
+                </div>
+                <a href="./pages/002.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/003.html"
+                ><img
+                  src="./img/003.png"
+                  class="card-img-top"
+                  alt="Venusaur imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°003</h5>
+                <h4 class="card-text">Venusaur</h4>
+                <div class="d-flex flex-row">
+                  <p class="tipo verde text-center">Planta</p>
+                  <p class="tipo morado text-center">Veneno</p>
+                </div>
+                <a href="./pages/003.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/004.html"
+                ><img
+                  src="./img/004.png"
+                  class="card-img-top"
+                  alt="Charmander imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°004</h5>
+                <h4 class="card-text">Charmander</h4>
+                <p class="tipo naranja text-center">Fuego</p>
+                <a href="./pages/004.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/005.html"
+                ><img
+                  src="./img/005.png"
+                  class="card-img-top"
+                  alt="Charmeleon imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°005</h5>
+                <h4 class="card-text">Charmeleon</h4>
+                <p class="tipo naranja text-center">Fuego</p>
+                <a href="./pages/005.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/006.html"
+                ><img
+                  src="./img/006.png"
+                  class="card-img-top"
+                  alt="Charizard imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°006</h5>
+                <h4 class="card-text">Charizard</h4>
+                <div class="d-flex flex-row">
+                  <p class="tipo naranja text-center">Fuego</p>
+                  <p class="tipo gris text-center">Volador</p>
+                </div>
+                <a href="./pages/006.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/007.html"
+                ><img
+                  src="./img/007.png"
+                  class="card-img-top"
+                  alt="Squirtle imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°007</h5>
+                <h4 class="card-text">Squirtle</h4>
+                <p class="tipo azul text-center">Agua</p>
+                <a href="./pages/007.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/008.html"
+                ><img
+                  src="./img/008.png"
+                  class="card-img-top"
+                  alt="Wartortle imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°008</h5>
+                <h4 class="card-text">Wartortle</h4>
+                <p class="tipo azul text-center">Agua</p>
+                <a href="./pages/008.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/009.html"
+                ><img
+                  src="./img/009.png"
+                  class="card-img-top"
+                  alt="Squirtle imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°009</h5>
+                <h4 class="card-text">Blastoise</h4>
+                <p class="tipo azul text-center">Agua</p>
+                <a href="./pages/009.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/010.html"
+                ><img
+                  src="./img/010.png"
+                  class="card-img-top"
+                  alt="Caterpie imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°010</h5>
+                <h4 class="card-text">Caterpie</h4>
+                <p class="tipo verde text-center">Bicho</p>
+                <a href="./pages/010.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/011.html"
+                ><img
+                  src="./img/011.png"
+                  class="card-img-top"
+                  alt="Metapod imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°011</h5>
+                <h4 class="card-text">Metapod</h4>
+                <p class="tipo verde text-center">Bicho</p>
+                <a href="./pages/011.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 my-2">
+            <div class="card">
+              <a href="./pages/012.html"
+                ><img
+                  src="./img/012.png"
+                  class="card-img-top"
+                  alt="Butterfree imagen"
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title text-secondary">N.°012</h5>
+                <h4 class="card-text">Butterfree</h4>
+                <div class="d-flex flex-row">
+                  <p class="tipo verde text-center">Bicho</p>
+                  <p class="tipo gris text-center">Volador</p>
+                </div>
+                <a href="./pages/012.html" class="btn btn-primary"
+                  >Ver detalle</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-4 bg-dark">
+      <div>
+        <section class="container text-center pt-2">
+          <p class="text-light">&copy Todos los derechos reservados</p>
+        </section>
+      </div>
+    </footer>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
 </html>
