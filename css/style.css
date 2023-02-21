@@ -38,8 +38,9 @@ main {
 .tipo {
   border-radius: 1em;
   color: #ffffff;
-  width: 70px;
+  width: 90px;
   font-weight: bold;
+  text-shadow: 0 0 4px #000;
 }
 
 .azul {
@@ -75,16 +76,15 @@ main {
 }
 
 .marron {
-  background-color: #573721;
+  background-color: #9b592d;
 }
 
 .roca {
-  background-color: #25170e;
+  background-color: #63391f;
 }
 
 .amarillo {
   background-color: #ffff00;
-  color: #000000;
 }
 
 .trainerCard {
@@ -157,6 +157,11 @@ main {
 
 .evoluciones {
   background: #0003;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* dispositivos small */
