@@ -1,5 +1,6 @@
-main {
-  margin-top: 56px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 nav {
@@ -14,6 +15,10 @@ nav {
   background-color: #00000030;
 }
 
+main {
+  margin-top: 56px;
+}
+
 .carousel-item img {
   height: 400px;
   object-fit: cover;
@@ -22,3 +27,39 @@ nav {
 .centrarImgBanner {
   object-position: 15%;
 }
+
+.tipo {
+  border-radius: 1em;
+  color: #ffffff;
+  width: 70px;
+  font-weight: bold;
+}
+
+.azul {
+  background-color: #0d6efd;
+}
+
+.naranja {
+  background-color: #fd7d24;
+}
+
+.verde {
+  background-color: #9bcc50;
+}
+
+.morado {
+  background-color: #b97fc9;
+}
+
+.gris {
+  background-color: #bdb9b8;
+}
+
+/* dispositivos small */
+@media all and (max-width: 767px) {
+}
+
+/* dispositivos medium */
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+
